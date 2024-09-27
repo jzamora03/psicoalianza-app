@@ -26,7 +26,6 @@
 
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
-
     <!-- IMport css login -->
     {{-- <link rel="stylesheet" href="{{ asset('css/menu-lateral.css') }}"> --}} 
 
@@ -66,9 +65,17 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
         <ul class="menu-items">
             <li><a href="{{ route('home') }}"><i class="fa fa-home icon"></i><span class="text">Home</span></a></li>
-            <li><a href="{{ route('empleados.index') }}"><i class="fa fa-person icon"></i><span class="text">Empleados</span></a></li>
-            <li><a href="{{ route('cargos.index') }}"><i class="fa-solid fa-bolt"></i><span class="text">Cargos</span></a></li>
-            {{-- <li class="nav-item"><a class="nav-link" href="{{ route('empleados.index') }}"> Cargos</a></li> --}}
+            
+            <!-- Menú desplegable -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" id="gestionarMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-folder icon"></i><span class="text">Listas</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="{{ route('empleados.index') }}"><i class="fa fa-user icon"></i><span class="text">Empleados</span></a></li>
+                    <li><a href="{{ route('cargos.index') }}"><i class="fa fa-bolt icon"></i><span class="text">Cargos</span></a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">

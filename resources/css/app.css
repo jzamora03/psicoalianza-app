@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #e9e9e9 !important; /* Color de fondo personalizado con !important */
+    background-color: #eeeeee93 !important; /* Color de fondo personalizado con !important */
     box-shadow: 0px 4px 12px rgba(160, 0, 0, 0.1); /* Sombra suave */
     padding: 10px 20px;
     border-bottom: 1px solid #e7e7e7 !important; /* Línea opcional para dar mejor contraste */
@@ -16,6 +16,7 @@
     font-weight: 500;
     display: flex;
     align-items: center;
+    margin-right: 100ox;
 }
 
 .navbar-nav .nav-link img {
@@ -25,8 +26,9 @@
 .navbar-nav .nav-link .text-muted {
     font-size: 0.85rem; 
     color: #6c757d; 
-    margin-right: 130px;
+    line-height: 1; 
 }
+
 
 .navbar-nav .nav-link .font-weight-bold {
     font-weight: bold;
@@ -89,58 +91,98 @@
     z-index: 1000; 
 }
 
+/* Estilos para el menú lateral */
 .menu-items {
+    font-size: 200px;
     color: white !important;
     list-style: none;
     padding: 0;
+    
 }
 
 .menu-items li {
     padding: 15px;
-    transition: background-color 0.3s; /* Transición para hover */
+    transition: background-color 0.3s;
 }
 
 .menu-items li:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .menu-items li a {
+    font-size: 18px;
     color: white !important;
     text-decoration: none;
-    display: flex; /* Flex para íconos y texto */
+    display: flex;
     align-items: center;
-    font-size: 20px;
-    font-size: 18px;
 }
 
 .menu-items li .icon {
+    margin-right: 10px;
+}
+
+/* Estilos para el menú desplegable */
+.menu-items .dropdown {
+    position: relative;
+}
+
+.menu-items .submenu {
+    display: none; 
+    list-style: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.menu-items .dropdown:hover .submenu {
+    display: block; 
+}
+
+.menu-items text{
+    font-size: 20px;
+}
+
+.submenu li {
+    
+    padding: 10px 0;
+}
+
+.submenu li a {
+    font-size: 10px; 
+}
+
+.sidebar.collapsed .submenu {
+    display: none !important;
+}
+
+
+.menu-items li .icon {
     font-size: 15px;
-    margin-right: 10px; /* Espacio entre ícono y texto */
+    margin-right: 10px; 
 }
 
 .sidebar.collapsed {
-    width: 55px; /* Ancho colapsado */
+    width: 60px; 
 }
 
 .sidebar.collapsed .menu-items li a {
-    justify-content: center; /* Centra los íconos en los elementos del menú */
+    justify-content: center; 
 }
 
 
 .sidebar.collapsed .menu-items li a .icon {
-    display: block; /* Asegura que los íconos sean visibles y centrados */
+    display: block; 
 }
 
 .sidebar.collapsed .menu-items li a .text {
-    display: none; /* Oculta solo el texto cuando el menú esté colapsado */
+    display: none;
 }
 
 .dashboard-content {
-    margin-left: 250px; /* Espacio para el menú */
-    transition: margin-left 0.3s; /* Transición suave para el contenido */
+    margin-left: 250px; 
+    transition: margin-left 0.3s;
 }
 
 /* Ajuste cuando el menú está colapsado */
 .sidebar.collapsed + .dashboard-content {
-    margin-left: 80px; /* Ajusta el margen cuando el menú está colapsado */
+    margin-left: 50px; 
 }
