@@ -5,7 +5,7 @@
     <div class="row justify-content-center align-items-center">
         <div class="col-md-8 text-center">
             <h2>Bienvenida!</h2>
-            <h3>{{ Auth::user()->name }}</h3> <!-- Aquí se muestra el nombre del usuario logueado -->
+            <h3>{{ Auth::user()->name }}</h3>
             <p>Añade los datos personales de tus empleados y después agrega su cargo en tu empresa</p>
             <button class="btn btn-primary mt-4" data-toggle="modal" data-target="#nuevoEmpleadoModal">
                 Empieza aquí

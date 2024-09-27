@@ -90,13 +90,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="images/206881.png" alt="User Image" class="rounded-circle" width="40">
                     <div class="d-flex flex-column ml-2 text-left">
-                        <span class="font-weight-bold text-dark">Jhoseph Zamora</span>
+                        <span class="font-weight-bold text-dark">{{ Auth::user()->name }}</span>
                         <span class="text-muted small">Administrador</span>
                     </div>
                 </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">Perfil</a>
-                            
+                                <a class="dropdown-item" href="#">Configuraciones</a>
+                                <a class="dropdown-item" href="#">Soporte</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
@@ -105,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
+                                
                             </div>
                         </li>
                     </ul>
@@ -118,6 +120,10 @@ document.addEventListener("DOMContentLoaded", function() {
             @yield('content')
         </main>
     </div>
+
+    
   
 </body>
+
+
 </html>

@@ -6,7 +6,7 @@
         <!-- Sección izquierda con imagen y texto -->
         <div class="col-md-6 d-none d-md-block left-section">
             <div class="overlay text-white d-flex flex-column justify-content-center align-items-start h-100">
-            <h1 class="title">
+                <h1 class="title">
                     Bienvenido a la mejor plataforma <br> <span style="font-weight: 700;">organizacional online</span>
                 </h1>
                 <p class="subtitle">Gestión efectiva del talento humano</p>
@@ -54,7 +54,12 @@
                         <button type="submit" class="btn btn-primary w-100">{{ __('Iniciar sesión') }}</button>
                     </div>
 
-                    <div class="d-flex justify-content-between">
+                    <!-- Enlace para registrarse -->
+                    <div class="text-center mt-3">
+                        <a href="{{ route('register') }}" class="text-primary">¿No tienes una cuenta? Regístrate</a>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
                         <a href="{{ route('password.request') }}">¿Olvidaste tu contraseña?</a>
                         <a href="#">¿Olvidaste tu usuario?</a>
                     </div>
