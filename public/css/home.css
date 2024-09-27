@@ -1,0 +1,21 @@
+.main-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-fluid {
+    max-width: 50%;
+    margin-left: 60%;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px;
+    }
+    .collapsed {
+        width: 50px;
+    }
+}

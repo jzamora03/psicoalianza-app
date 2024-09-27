@@ -1,0 +1,191 @@
+.container {
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+.table {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.table thead th {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table tbody tr td {
+    font-size: 1rem;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.table thead th input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.table .btn {
+    font-size: 1.25rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shadow-sm {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.modal-header.bg-primary {
+    background-color: #3A47D5;
+}
+
+.modal-header h5 {
+    font-weight: bold;
+    color: white;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #e0e0e0;
+    color: #6c757d;
+    border: none;
+}
+
+.modal-footer .btn-primary {
+    background-color: #3A47D5;
+    border: none;
+}
+
+button.close span {
+    color: white;
+}
+
+.modal-body input[disabled] {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
+
+
+/*********** ESTILOS VISTA EMPLEADOS **********/
+
+/* Estilo del header del modal */
+.modal-header.bg-primary {
+    background-color: #3A47D5;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Bordes y radio del modal */
+.modal-content {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Estilo del botón de cierre del modal */
+button.close span {
+    color: white;
+}
+
+/* Botones del modal */
+.modal-footer .btn-secondary {
+    background-color: #e0e0e0;
+    color: #6c757d;
+    border: none;
+}
+
+.modal-footer .btn-primary {
+    background-color: #3A47D5;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Estilos de los inputs del formulario */
+.modal-body .form-control {
+    background-color: #f7f8fc;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Estilos adicionales para inputs deshabilitados */
+.modal-body .form-control[disabled] {
+    background-color: #ececec;
+    color: #888;
+}
+
+/* Estilo de la tabla */
+.table thead {
+    background-color: #f7f8fc;
+}
+
+.table th {
+    font-weight: bold;
+    color: #6c757d;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+    border-bottom: 1px solid #dee2e6;
+    padding: 12px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botones de acción en la tabla */
+.btn.btn-sm {
+    font-size: 16px;
+    padding: 4px;
+}
+
+.btn.btn-sm.text-primary {
+    color: #3A47D5;
+}
+
+.btn.btn-sm.text-danger {
+    color: #d9534f;
+}
