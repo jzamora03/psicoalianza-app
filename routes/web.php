@@ -25,7 +25,6 @@ Route::get('/empleados', [EmpleadoController::class, 'index'])->name('empleados.
 
 // Rutas de la API para obtener empleados
 Route::get('/api/empleados', [EmpleadoController::class, 'indexApi'])->name('api.empleados');
-// Route::get('/empleados', [EmpleadoController::class, 'indexApi'])->name('empleados.index');
 
 /**Ruta para editar los empleado***/
 
