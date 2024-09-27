@@ -57,10 +57,10 @@
 
 <!-- Modal para editar empleado -->
 <div id="editarEmpleadoModal" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title">Editar empleado</h5>
+            <div class="modal-header" style="background-color: #4B49AC;">
+                <h5 class="modal-title text-white">Editar empleado</h5>
                 <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -68,34 +68,40 @@
             <div class="modal-body">
                 <form id="editarEmpleadoForm">
                     <input type="hidden" id="empleado_id">
-                    <div class="form-group mb-3">
-                        <label for="nombres_edit">Nombres</label>
-                        <input type="text" id="nombres_edit" class="form-control">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="nombres_edit">Nombres</label>
+                            <input type="text" id="nombres_edit" class="form-control" placeholder="Escribe el nombre del empleado">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellidos_edit">Apellidos</label>
+                            <input type="text" id="apellidos_edit" class="form-control" placeholder="Escribe los apellidos del empleado">
+                        </div>
                     </div>
-                    <div class="form-group mb-3">
-                        <label for="apellidos_edit">Apellidos</label>
-                        <input type="text" id="apellidos_edit" class="form-control">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label for="identificacion_edit">Identificación</label>
+                            <input type="text" id="identificacion_edit" class="form-control" placeholder="Escribe el número de identificación">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telefono_edit">Teléfono</label>
+                            <input type="text" id="telefono_edit" class="form-control" placeholder="Escribe el número de teléfono">
+                        </div>
                     </div>
-                    <div class="form-group mb-3">
-                        <label for="identificacion_edit">Identificación</label>
-                        <input type="text" id="identificacion_edit" class="form-control">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="telefono_edit">Teléfono</label>
-                        <input type="text" id="telefono_edit" class="form-control">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="ciudad_edit">Ciudad</label>
-                        <input type="text" id="ciudad_edit" class="form-control">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="departamento_edit">Departamento</label>
-                        <input type="text" id="departamento_edit" class="form-control">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label for="ciudad_edit">Ciudad</label>
+                            <input type="text" id="ciudad_edit" class="form-control" placeholder="Escribe la ciudad">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="departamento_edit">Departamento</label>
+                            <input type="text" id="departamento_edit" class="form-control" placeholder="Escribe el departamento">
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-primary" onclick="guardarEdicionEmpleado()">Guardar cambios</button>
             </div>
         </div>
